@@ -4,6 +4,8 @@ const express = require('express');
 
 const app = express();
 const Data = require('../src/models/data');
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json());
 
